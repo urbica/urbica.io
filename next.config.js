@@ -11,7 +11,15 @@ module.exports = {
         },
       });
     }
+
     return config;
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://urbica.github.io/urbica.co' : ''
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/blog': { page: '/blog' },
+      '/projects': { page: '/projects' }
+    }
+  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/urbica.co' : ''
 };

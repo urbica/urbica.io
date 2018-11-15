@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 export default () => (
   <Layout>
     <Title>
-      Welcome to URBICA
+      Welcome to URBICA!!!
     </Title>
   </Layout>
 );
