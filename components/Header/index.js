@@ -4,14 +4,20 @@ import Container from './Container';
 
 export default () => (
   <Container>
-    <Link href='/'>
-      <a>Logo</a>
+    <Link href="/">
+      <a>
+Logo
+      </a>
     </Link>
-    <Link href='/blog'>
-      <a>blog</a>
+    <Link href="./blog">
+      <a>
+blog
+      </a>
     </Link>
-    <Link href='/projects'>
-      <a>projects</a>
+    <Link href="./projects">
+      <a>
+projects
+      </a>
     </Link>
   </Container>
 );

@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 
 export default () => (
   <Layout>
-    <Title>Welcome to URBICA</Title>
+    <Title>
+      Welcome to URBICA
+    </Title>
   </Layout>
 );
