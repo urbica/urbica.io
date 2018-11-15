@@ -1,3 +1,5 @@
+const env = require('./env-config')
+
 {
   "presets": [
     "next/babel"
