@@ -1,5 +1,3 @@
-const debug = process.env.NODE_ENV !== 'production';
-
 module.exports = {
   webpack: (config, { dev }) => {
     if (dev) {
@@ -22,5 +20,5 @@ module.exports = {
       '/projects': { page: '/projects' }
     }
   },
-  assetPrefix: !debug ? '/urbica.co/' : ''
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/urbica.co' : ''
 };
