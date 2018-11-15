@@ -9,12 +9,12 @@ export default () => (
         Logo
       </a>
     </Link>
-    <Link href="./blog">
+    <Link href="/blog">
       <a>
         blog
       </a>
     </Link>
-    <Link href="./projects">
+    <Link href="/projects">
       <a>
         projects
       </a>
