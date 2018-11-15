@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import Title from '../components/Title';
+import Layout from '../components/Layout';
 
-const Title = styled.h1`
-  color: black;
-  font-size: 50px;
-`;
-
-export default () => <Title>Welcome to URBICA</Title>
+export default () => (
+  <Layout>
+    <Title>Welcome to URBICA</Title>
+  </Layout>
+);
