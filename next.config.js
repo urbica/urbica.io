@@ -1,3 +1,5 @@
+const debug = process.env.NODE_ENV !== 'production';
+
 module.exports = {
   webpack: (config, { dev }) => {
     if (dev) {
@@ -13,4 +15,12 @@ module.exports = {
     }
     return config;
   },
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/blog': { page: '/blog' },
+      '/projects': { page: '/projects' }
+    }
+  },
+  assetPrefix: !debug ? '/urbica.co/' : ''
 };

@@ -6,17 +6,17 @@ export default () => (
   <Container>
     <Link href="/">
       <a>
-Logo
+        Logo
       </a>
     </Link>
     <Link href="./blog">
       <a>
-blog
+        blog
       </a>
     </Link>
     <Link href="./projects">
       <a>
-projects
+        projects
       </a>
     </Link>
   </Container>

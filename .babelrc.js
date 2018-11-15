@@ -1,6 +1,6 @@
-const env = require('./env-config')
+const env = require('./env-config');
 
-{
+module.exports = {
   "presets": [
     "next/babel"
   ],
@@ -8,10 +8,11 @@ const env = require('./env-config')
     [
       "styled-components",
       {
-        "ssr": true,
+        "ssr": false,
         "displayName": true,
         "preprocess": false
       }
-    ]
+    ],
+    ['transform-define', env]
   ]
-}
+};
