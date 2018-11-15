@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "export": "next export",
+    "start": "next start",
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -d out"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,11 @@
   "bugs": {
     "url": "https://github.com/urbica/urbica.co/issues"
   },
-  "homepage": "https://github.com/urbica/urbica.co#readme",
+  "homepage": "https://urbica.github.io/urbica.co/",
   "dependencies": {
     "next": "7.0.2",
     "react": "16.6.3",
-    "react-dom": "16.6.3"
+    "react-dom": "16.6.3",
+    "gh-pages": "2.0.1"
   }
 }
