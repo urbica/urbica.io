@@ -13,12 +13,5 @@ module.exports = {
     }
     return config;
   },
-  exportPathMap: function () {
-    return {
-      '/': { page: '/' },
-      '/blog': { page: '/blog' },
-      '/projects': { page: '/projects' }
-    }
-  },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/urbica.co' : ''
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://urbica.github.io/urbica.co' : ''
 };
