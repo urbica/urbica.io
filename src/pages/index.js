@@ -1,11 +1,9 @@
 import React from 'react';
-import Title from '../components/Title';
 import Layout from '../components/Layout';
+import FirstBlock from '../components/FirstBlock';
 
 export default () => (
   <Layout>
-    <Title>
-      Welcome to URBICA!!!
-    </Title>
+    <FirstBlock />
   </Layout>
 );

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import DecimaMonoProOtf from '../../assets/fonts/DecimaMonoPro.otf';
-import DecimaMonoProWoff from '../../assets/fonts/DecimaMonoPro.woff';
-import DecimaMonoProWoff2 from '../../assets/fonts/DecimaMonoPro.woff2';
+import DecimaMonoProOtf from '../assets/fonts/DecimaMonoPro.otf';
+import DecimaMonoProWoff from '../assets/fonts/DecimaMonoPro.woff';
+import DecimaMonoProWoff2 from '../assets/fonts/DecimaMonoPro.woff2';
 
 export default createGlobalStyle`
   @font-face {

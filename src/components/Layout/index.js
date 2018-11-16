@@ -5,11 +5,9 @@ import 'normalize.css';
 
 import Header from '../Header';
 import Container from './Container';
-import GlobalStyles from './globalStyles';
 
 const Layout = ({ title, children }) => (
   <Container>
-    <GlobalStyles />
     <Helmet>
       <title>{title}</title>
     </Helmet>
