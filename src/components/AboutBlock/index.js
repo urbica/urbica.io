@@ -12,7 +12,7 @@ export default () => (
         We care about your business
       </Title>
       <Text>
-        We design rich data tools and applications that help our customers toleverage data getting powerful insights
+        We design rich data tools and applications that help our customers to leverage data getting powerful insights
         and make better decisions.
       </Text>
       <LinkWithArrow to="/projects">
