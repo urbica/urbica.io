@@ -4,6 +4,8 @@ import DecimaMonoProWoff from '../assets/fonts/DecimaMonoPro.woff';
 import DecimaMonoProWoff2 from '../assets/fonts/DecimaMonoPro.woff2';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
   @font-face {
     font-family: 'DecimaMonoPro';
     font-style: normal;

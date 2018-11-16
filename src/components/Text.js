@@ -9,5 +9,5 @@ export default styled.div`
 
   mix-blend-mode: normal;
   
-  margin-bottom: 20%;
+  margin-bottom: 40px;
 `;

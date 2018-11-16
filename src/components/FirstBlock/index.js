@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from './Container';
 import Wrap from '../Wrap';
-import Title from './Title';
-import Text from './Text';
+import Title from '../Title';
+import Text from '../Text';
 
 export default () => (
   <Container>
