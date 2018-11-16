@@ -6,7 +6,7 @@ const Container = styled.div`
   height: 50px;
   padding: 0 30px;
   justify-content: space-between;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 `;
 
 export default Container;
