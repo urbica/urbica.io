@@ -1,8 +1,12 @@
 import React from 'react';
-import Header from './Header/index';
+import { Helmet } from 'react-helmet';
+import Header from './Header';
 
-const Layout = ({ children }) => (
+const Layout = ({ title = 'Urbica', children }) => (
   <>
+    <Helmet>
+      <title>{title}</title>
+    </Helmet>
     <Header />
     {children}
   </>
