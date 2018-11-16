@@ -17,7 +17,7 @@ const Block = ({ title, text }) => (
 
 Block.propTypes = {
   title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 };
 
 export default Block;
