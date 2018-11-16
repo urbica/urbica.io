@@ -1,41 +1,31 @@
 {
-  "name": "urbica.co",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "predeploy": "rm -rf .next out && npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "develop": "gatsby develop",
+    "start": "yarn develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/urbica/urbica.co.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/urbica/urbica.co/issues"
-  },
-  "homepage": "https://urbica.github.io/urbica.co/",
   "dependencies": {
-    "next": "7.0.2",
+    "babel-plugin-styled-components": "1.8.0",
+    "gatsby": "2.0.50",
+    "gatsby-plugin-styled-components": "3.0.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "styled-components": "4.1.1"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
-    "babel-plugin-styled-components": "1.8.0",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-loader": "2.1.1",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-react": "7.11.1",
+    "gatsby-plugin-eslint": "2.0.1",
     "gh-pages": "2.0.1"
   }
 }

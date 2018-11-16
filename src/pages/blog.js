@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 export default () => (
   <Layout>
     <div>
-blog
+      blog
     </div>
   </Layout>
 );
