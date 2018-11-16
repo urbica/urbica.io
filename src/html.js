@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import GlobalStyles from './components/GlobalStyles';
-
 
 export default class HTML extends React.Component {
   render() {
@@ -15,7 +13,6 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <title>Urbica</title>
-          <GlobalStyles />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>

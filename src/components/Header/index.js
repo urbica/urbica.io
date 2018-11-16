@@ -9,14 +9,14 @@ import urbica from '../../assets/svg/URBICA.svg';
 export default () => (
   <Container>
     <Link to="/">
-      <img src={urbica} alt='Urbica' />
+      <img src={urbica} alt="Urbica" />
     </Link>
     <Navigation>
-      <NavigationLink to="/blog">
-        blog
-      </NavigationLink>
       <NavigationLink to="/projects">
         projects
+      </NavigationLink>
+      <NavigationLink to="/contacts">
+        contacts
       </NavigationLink>
     </Navigation>
   </Container>
