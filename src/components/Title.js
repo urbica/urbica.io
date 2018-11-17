@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  width: 600px;
   line-height: 50px;
   font-size: 40px;
   text-transform: uppercase;

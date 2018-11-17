@@ -7,7 +7,6 @@ const LinkWithArrow = styled(Link)`
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
   font-weight: normal;
-  line-height: 60px;
   font-size: 20px;
   text-decoration-line: underline;
 
