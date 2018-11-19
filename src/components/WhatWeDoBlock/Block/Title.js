@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Title = styled.div`
   width: 320px;
-  line-height: 36px;
+  line-height: 40px;
   font-size: 30px;
   text-transform: uppercase;
   color: #cccccc;

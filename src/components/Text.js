@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export default styled.div`
   width: 600px;
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 40px;
+  font-size: 30px;
 
   color: #CCCCCC;
 
