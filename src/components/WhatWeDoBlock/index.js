@@ -7,7 +7,7 @@ import Block from './Block';
 import data from '../../configs/whatWeDo';
 
 export default () => (
-  <Container>
+  <Container id="whatWeDo">
     <Wrap disableTopBorder>
       <div>
         <Title>
