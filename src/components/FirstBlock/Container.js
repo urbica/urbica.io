@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import background from '../../assets/images/map.jpg';
+// import background from '../../assets/images/map.jpg';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding: 150px 30px 0;
   width: 100%;
-  height: 100vh;
-  background: url(${background}) no-repeat;
-  background-size: cover;
+  min-height: calc(100vh - 180px);
   
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
 `;
 
 export default Container;

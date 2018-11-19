@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  max-width: 600px;
-  line-height: 50px;
-  font-size: 40px;
+  max-width: 500px;
+  line-height: 40px;
+  font-size: 30px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #cccccc;
 
   mix-blend-mode: normal;
   margin-bottom: 30px;

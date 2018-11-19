@@ -8,17 +8,19 @@ import data from '../../configs/whatWeDo';
 
 export default () => (
   <Container>
-    <Wrap>
-      <Title>
-        What we do
-      </Title>
-      <Content>
-        {
-          data.map(({ title, text }) => (
-            <Block title={title} text={text} />
-          ))
-        }
-      </Content>
+    <Wrap disableTopBorder>
+      <div>
+        <Title>
+          What we do
+        </Title>
+        <Content>
+          {
+            data.map(({ title, text }) => (
+              <Block key={title} title={title} text={text} />
+            ))
+          }
+        </Content>
+      </div>
     </Wrap>
   </Container>
 );

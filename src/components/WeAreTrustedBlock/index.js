@@ -6,21 +6,26 @@ import Container from './Container';
 import Contanet from './Content';
 import Block from './Block';
 
+import GetInTouchBlock from '../GetInTouchBlock';
+
 import images from '../../configs/weAreTrusted';
 
 export default () => (
   <Container>
     <Wrap>
-      <Title>We are trusted</Title>
-      <Contanet>
-        {
-          images.map(({ name, url }) => (
-            <Block key={name}>
-              <img src={url} alt={name} />
-            </Block>
-          ))
-        }
-      </Contanet>
+      <div>
+        <Title>We are trusted</Title>
+        <Contanet>
+          {
+            images.map(({ name, url }) => (
+              <Block key={name}>
+                <img src={url} alt={name} />
+              </Block>
+            ))
+          }
+        </Contanet>
+      </div>
+      <GetInTouchBlock />
     </Wrap>
   </Container>
 );

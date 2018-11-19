@@ -4,9 +4,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 265px;
-  background: #000000;
-  
+  height: 180px;
+  border: 1px solid #CCCCCC;  
   justify-content: center;
   align-items: center;
 `;

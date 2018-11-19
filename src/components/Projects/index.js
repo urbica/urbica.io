@@ -5,11 +5,9 @@ import Title from '../Title';
 
 export default () => (
   <Container>
-    <Wrap disableBorder>
-      <Title>
-        We design rich data tools and visualisations that help our
-        customers leverage data for business insights and
-        decision-making
+    <Wrap>
+      <Title style={{ paddingLeft: 20 }}>
+        Selected projects
       </Title>
     </Wrap>
   </Container>
