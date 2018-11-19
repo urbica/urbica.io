@@ -5,7 +5,7 @@ import Title from '../Title';
 
 export default () => (
   <Container>
-    <Wrap disableBorder>
+    <Wrap disableBorder style={{ paddingTop: 60 }}>
       <Title>
         We design rich data tools and visualisations that help our
         customers leverage data for business insights and

@@ -5,8 +5,9 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: calc(100% - 60px);
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 80px);
   border-top: ${({ disableBorder }) => (disableBorder ? '0' : '1px')} solid #CCCCCC;
+  box-sizing: border-box;
   padding: 50px 0;
 `;
 
