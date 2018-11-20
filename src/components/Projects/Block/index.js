@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import ProgressiveImage from 'react-progressive-image';
 import PropTypes from 'prop-types';
 
@@ -18,8 +19,8 @@ const Block = (props) => {
 
   return (
     <ProgressiveImage
-      src={img}
-      placeholder={getThumbUrl(img)}
+      src={withPrefix(img)}
+      placeholder={withPrefix(getThumbUrl(img))}
     >
       {(src, loading) => (
         <Container

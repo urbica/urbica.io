@@ -1,7 +1,8 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
+
 import Title from '../Title';
 import Wrap from '../Wrap';
-
 import Container from './Container';
 import Contanet from './Content';
 import Block from './Block';
@@ -19,7 +20,7 @@ export default () => (
           {
             images.map(({ name, url }) => (
               <Block key={name}>
-                <img src={url} alt={name} />
+                <img src={withPrefix(url)} alt={name} />
               </Block>
             ))
           }

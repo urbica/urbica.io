@@ -8,6 +8,10 @@ const Container = styled.div`
   width: 100%;
   
   box-sizing: border-box;
+  
+  @media (max-width: 850px) {
+    padding-top: 170px;
+  }
 `;
 
 export default Container;
