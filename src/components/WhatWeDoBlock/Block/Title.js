@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Title = styled.div`
-  width: 320px;
+  max-width: 200px;
   line-height: 40px;
   font-size: 30px;
   text-transform: uppercase;

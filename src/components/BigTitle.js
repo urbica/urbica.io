@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  line-height: 40px;
-  font-size: 30px;
+  max-width: 70%;
+  line-height: calc(100vw / 25);
+  font-size: calc(100vw / 30);
   text-transform: uppercase;
 
   color: #cccccc;

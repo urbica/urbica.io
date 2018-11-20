@@ -8,7 +8,10 @@ import data from '../../configs/whatWeDo';
 
 export default () => (
   <Container id="whatWeDo">
-    <Wrap disableTopBorder>
+    <Wrap
+      disableTopBorder
+      disableMinHeight
+    >
       <div>
         <Title>
           What we do

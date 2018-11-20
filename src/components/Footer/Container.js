@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
-const Container = styled(Link)`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11,13 +10,6 @@ const Container = styled(Link)`
   align-items: center;
   text-decoration: none;
   color: #CCCCCC;
-  
-  &:hover {
-    background: #CCCCCC;
-    div, a {
-      color: #171F2A;
-    }
-  }
 `;
 
 export default Container;

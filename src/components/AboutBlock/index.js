@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import Wrap from '../Wrap';
-import Title from '../Title';
+import Title from '../BigTitle';
 import Text from '../Text';
 import LinkWithArrow from '../LinkWithArrow';
 

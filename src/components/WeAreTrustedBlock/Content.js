@@ -6,6 +6,7 @@ const Content = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
+  margin-bottom: 60px;
 `;
 
 export default Content;
