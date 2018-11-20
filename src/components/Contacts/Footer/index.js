@@ -15,23 +15,23 @@ export default () => (
       </Block>
       <Block>
         <div>
-          <Link href="/">twitter</Link>
+          <Link to="/">twitter</Link>
         </div>
         <div>
-          <Link href="/">medium</Link>
-        </div>
-      </Block>
-      <Block>
-        <div>
-          <Link href="/">face</Link>
-        </div>
-        <div>
-          <Link href="/">medium</Link>
+          <Link to="/">medium</Link>
         </div>
       </Block>
       <Block>
         <div>
-          <Link href="/">hello@urbica.co</Link>
+          <Link to="/">face</Link>
+        </div>
+        <div>
+          <Link to="/">medium</Link>
+        </div>
+      </Block>
+      <Block>
+        <div>
+          <Link to="/">hello@urbica.co</Link>
         </div>
         +7 916 627 16 46
       </Block>

@@ -10,6 +10,7 @@
     "deploy": "rm -rf public && gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-plugin-styled-components": "1.8.0",
     "gatsby": "2.0.52",
     "gatsby-plugin-react-helmet": "3.0.2",

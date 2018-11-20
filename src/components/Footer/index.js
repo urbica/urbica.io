@@ -5,8 +5,8 @@ import Title from '../Title';
 import LinkWithArrow from '../LinkWithArrow';
 
 export default () => (
-  <Container>
+  <Container to="/">
     <Title>Let’s get in touch</Title>
-    <LinkWithArrow to="/">Work with us</LinkWithArrow>
+    <LinkWithArrow to="/" as="div">Work with us</LinkWithArrow>
   </Container>
 );

@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 
 import Container from './Container';
 import Section from './Section';
@@ -17,7 +16,7 @@ export default () => (
     <Section
       title="Our technologies"
       content={technologies}
+      footer
     />
-    <Footer />
   </Container>
 );
