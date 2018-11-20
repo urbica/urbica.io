@@ -11,7 +11,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   const values = { fields: parseForm(e.target) };
   const auth = {
-    headers: { Authorization: 'Bearer keyml20MIWE5ZQGhA' },
+    headers: { Authorization: 'Bearer ---' },
   };
 
   axios.post('https://api.airtable.com/v0/app4VuYkBklQRr1Or/mail', values, auth)
