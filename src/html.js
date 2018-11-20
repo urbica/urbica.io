@@ -1,5 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+/* eslint-disable */
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class HTML extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class HTML extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=0.7, shrink-to-fit=no"
           />
           <title>Urbica</title>
           {this.props.headComponents}

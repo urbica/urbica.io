@@ -17,5 +17,6 @@ export default createGlobalStyle`
 
   html {
     font-family: 'DecimaMonoPro', monospace;
+    background: rgb(23,31,42);
   }
 `;

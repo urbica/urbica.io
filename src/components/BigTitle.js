@@ -10,4 +10,10 @@ export default styled.div`
 
   mix-blend-mode: normal;
   margin-bottom: 30px;
+  
+  @media (max-width: 850px) {
+    max-width: 100%;
+    line-height: 33px;
+    font-size: 30px;
+  }
 `;
