@@ -25,7 +25,7 @@ const Container = styled.div`
   }
 
   &:hover {
-    div {
+    :before {
       background-color: rgba(255,255,255,0);
     }
   }
