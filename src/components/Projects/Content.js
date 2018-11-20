@@ -5,7 +5,7 @@ const Content = styled.div`
   position: relative;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 `;
 
 export default Content;

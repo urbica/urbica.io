@@ -5,12 +5,12 @@ const Content = styled.div`
   
   @media (max-width: 1200px) {
     width: 50%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   
   @media (max-width: 850px) {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 `;
 

@@ -10,6 +10,10 @@ const Container = styled.div`
   color: #cccccc;
 
   box-sizing: border-box;
+  
+  @media (max-width: 850px) {
+    padding-top: 230px;
+  }
 `;
 
 export default Container;
