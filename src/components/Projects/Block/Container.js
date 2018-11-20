@@ -6,12 +6,22 @@ const Container = styled.div`
   height: auto;
   margin-bottom: 30px;
   cursor: pointer;
+  overflow: hidden;
 
   &::before {
     content: "";
     display: block;
     padding-top: 100%;
     transition: background-color 0.3s;
+    background-color: rgba(12,16,25,0.9);
+    background-image: url(${({ img }) => img});
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(${({ loading }) => (loading ? '8px' : '0px')});
+    background-blend-mode: luminosity;
+    background-size: cover;
+    cursor: pointer;
+    opacity: ${({ loading }) => (!loading ? 1 : 0.5)};
   }
 
   &:hover {

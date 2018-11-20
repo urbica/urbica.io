@@ -1,12 +1,11 @@
 import React from 'react';
+import ProgressiveImage from 'react-progressive-image';
 import PropTypes from 'prop-types';
 
 import Container from './Container';
 import Title from './Title';
 import Text from './Text';
 import Arrow from './Arrow';
-import Thumb from './Thumb';
-import Image from './Image';
 
 const Block = (props) => {
   const {
@@ -18,15 +17,17 @@ const Block = (props) => {
   } = props;
 
   return (
-    <Container img={img}>
-      <Thumb imgThumb={imgThumb} />
-      <Image img={img} />
-      <Title to={url}>
-        {title}
-        <Arrow />
-      </Title>
-      <Text>{description}</Text>
-    </Container>
+    <ProgressiveImage src={img} placeholder={imgThumb}>
+      {(src, loading) => (
+        <Container img={src} loading={loading}>
+          <Title to={url}>
+            {title}
+            <Arrow />
+          </Title>
+          <Text>{description}</Text>
+        </Container>
+      )}
+    </ProgressiveImage>
   );
 };
 
