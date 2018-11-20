@@ -9,4 +9,8 @@ export default styled.div`
 
   mix-blend-mode: normal;
   margin-bottom: 30px;
+  
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 `;

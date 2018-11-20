@@ -8,4 +8,8 @@ export default styled.div`
   color: #CCCCCC;
 
   mix-blend-mode: normal;
+  
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 `;

@@ -10,4 +10,16 @@ export default styled.div`
 
   color: #cccccc;
   opacity: 0.8;
+  
+  @media (max-width: 1200px) {
+    width: calc(50% - 30px);
+    padding-bottom: 50px;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 850px) {
+    width: 100%;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+  }
 `;

@@ -6,6 +6,10 @@ const Container = styled.div`
   width: 100%;
   justify-content: space-between;
   padding-bottom: 50px;
+  
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export default Container;
