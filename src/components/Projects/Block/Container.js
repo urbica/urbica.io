@@ -13,11 +13,11 @@ const Container = styled.div`
     display: block;
     padding-top: 100%;
     transition: background-color 0.3s;
-    background-color: rgba(12,16,25,0.9);
+    background-color: rgba(12,16,25,1);
     background-image: url(${({ img }) => img});
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(${({ loading }) => (loading ? '8px' : '0px')});
+    filter: blur(${({ loading }) => (loading ? '4px' : '0px')});
     background-blend-mode: luminosity;
     background-size: cover;
     cursor: pointer;
