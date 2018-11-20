@@ -4,12 +4,14 @@ const { promisify } = require("util");
 const sharp = require("sharp");
 const glob = require("glob");
 
-const imgsDir = path.join("./src/assets/", "**/*.+(jpg|jpeg|png)");
+const imgsDir = path.join("./static/images/", "**/*.+(jpg|jpeg|png)");
 const globP = promisify(glob);
 
 const addThumbToName = filePath => {
-  const parts = filePath.split(".");
-  return [parts[0], '.thumb.', parts[1]].join('');
+  const parts = filePath.split("/");
+  const fileName = 'thumb.' + parts.pop();
+
+  return [...parts, fileName].join('/');
 };
 
 globP(imgsDir)

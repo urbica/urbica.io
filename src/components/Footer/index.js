@@ -7,6 +7,6 @@ import LinkWithArrow from '../LinkWithArrow';
 export default () => (
   <Container>
     <Title>Let’s get in touch</Title>
-    <LinkWithArrow to="/">Work with us</LinkWithArrow>
+    <LinkWithArrow to="/contacts">Work with us</LinkWithArrow>
   </Container>
 );

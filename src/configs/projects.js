@@ -1,58 +1,38 @@
-import gulag from '../assets/images/projects/gulag.jpg';
-import arial from '../assets/images/projects/arial.jpeg';
-import muf from '../assets/images/projects/muf.jpg';
-import mapsme from '../assets/images/projects/mapsme.jpg';
-import magistral from '../assets/images/projects/magistral.jpg';
-import velobike from '../assets/images/projects/velobike.jpg';
-
-import tgulag from '../assets/images/projects/gulag.thumb.jpg';
-import tarial from '../assets/images/projects/arial.thumb.jpeg';
-import tmuf from '../assets/images/projects/muf.thumb.jpg';
-import tmapsme from '../assets/images/projects/mapsme.thumb.jpg';
-import tmagistral from '../assets/images/projects/magistral.thumb.jpg';
-import tvelobike from '../assets/images/projects/velobike.thumb.jpg';
-
 export default [
   {
     title: 'MAP OF GULAG MUSEUM',
     description: 'UI/UX design, map design',
-    url: '/',
-    img: gulag,
-    imgThumb: tgulag,
+    url: 'https://v3.urbica.co/gulag',
+    img: './images/projects/gulag.jpg',
   },
   {
     title: 'AReal APP',
     description: 'UI/UX design, map design, app',
     url: '/',
-    img: arial,
-    imgThumb: tarial,
+    img: './images/projects/arial.jpeg',
   },
   {
     title: 'Agglomerations',
     description: 'UI/UX design, map design, analytics',
-    url: '/',
-    img: muf,
-    imgThumb: tmuf,
+    url: 'https://v3.urbica.co/agglomerations',
+    img: './images/projects/muf.jpg',
   },
   {
     title: 'Maps.me',
     description: 'map design',
-    url: '/',
-    img: mapsme,
-    imgThumb: tmapsme,
+    url: 'https://v3.urbica.co/maps_me',
+    img: './images/projects/mapsme.jpg',
   },
   {
     title: 'Magistral',
     description: 'UI/UX design, map design, analytics',
-    url: '/',
-    img: magistral,
-    imgThumb: tmagistral,
+    url: 'https://v3.urbica.co/magistral',
+    img: './images/projects/magistral.jpg',
   },
   {
     title: 'Velobike',
     description: 'UI/UX design, map design, analytics',
-    url: '/',
-    img: velobike,
-    imgThumb: tvelobike,
+    url: 'https://v3.urbica.co/velobike',
+    img: './images/projects/velobike.jpg',
   },
 ];

@@ -1,31 +1,20 @@
-import galton from '../assets/images/technologies/galton.jpg';
-import map from '../assets/images/technologies/map-gl.png';
-import martin from '../assets/images/technologies/martin.jpg';
-
-import tgalton from '../assets/images/technologies/galton.thumb.jpg';
-import tmap from '../assets/images/technologies/map-gl.thumb.png';
-import tmartin from '../assets/images/technologies/martin.thumb.jpg';
-
 export default [
   {
     title: 'galton',
     description: 'development',
-    url: '/',
-    img: galton,
-    imgThumb: tgalton,
+    url: 'https://github.com/urbica/galton',
+    img: './images/technologies/galton.jpg',
   },
   {
     title: 'martin',
     description: 'development',
-    url: '/',
-    img: martin,
-    imgThumb: tmartin,
+    url: 'https://martin.urbica.co/',
+    img: './images/technologies/martin.jpg',
   },
   {
     title: 'REACT MAP GL',
     description: 'development',
-    url: '/',
-    img: map,
-    imgThumb: tmap,
+    url: 'https://github.com/urbica/react-map-gl',
+    img: './images/technologies/map-gl.png',
   },
 ];

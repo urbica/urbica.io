@@ -29,7 +29,6 @@ const Section = (props) => {
               title={item.title}
               description={item.description}
               img={item.img}
-              imgThumb={item.imgThumb}
               url={item.url}
             />
           ))

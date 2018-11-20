@@ -6,21 +6,29 @@ import Container from './Container';
 import Title from './Title';
 import Text from './Text';
 import Arrow from './Arrow';
+import getThumbUrl from '../../../utils/getThumbUrl';
 
 const Block = (props) => {
   const {
     title,
     description,
     img,
-    imgThumb,
     url,
   } = props;
 
   return (
-    <ProgressiveImage src={img} placeholder={imgThumb}>
+    <ProgressiveImage
+      src={img}
+      placeholder={getThumbUrl(img)}
+    >
       {(src, loading) => (
-        <Container img={src} loading={loading}>
-          <Title to={url}>
+        <Container
+          href={url}
+          img={src}
+          loading={loading}
+          target="_blank"
+        >
+          <Title>
             {title}
             <Arrow />
           </Title>
@@ -35,7 +43,6 @@ Block.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  imgThumb: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };
 
