@@ -9,6 +9,10 @@ const Container = styled.div`
   
   box-sizing: border-box;
   align-items: center;
+  
+  @media (max-width: 850px) {
+    padding-top: 90px;
+  }
 `;
 
 export default Container;
