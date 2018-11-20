@@ -6,7 +6,7 @@ import Container from './Container';
 import Contanet from './Content';
 import Block from './Block';
 
-import GetInTouchBlock from '../GetInTouchBlock';
+import Footer from '../Footer';
 
 import images from '../../configs/weAreTrusted';
 
@@ -25,7 +25,7 @@ export default () => (
           }
         </Contanet>
       </div>
-      <GetInTouchBlock />
+      <Footer />
     </Wrap>
   </Container>
 );

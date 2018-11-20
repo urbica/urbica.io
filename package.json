@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "1.8.0",
-    "gatsby": "2.0.50",
+    "gatsby": "2.0.52",
     "gatsby-plugin-react-helmet": "3.0.2",
     "gatsby-plugin-styled-components": "3.0.2",
     "normalize.css": "8.0.1",
     "prop-types": "15.6.2",
     "react": "16.6.3",
-    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-anchor-link-smooth-scroll": "1.0.11",
     "react-dom": "16.6.3",
     "react-helmet": "5.2.0",
     "styled-components": "4.1.1"
