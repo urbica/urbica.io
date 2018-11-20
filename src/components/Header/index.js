@@ -1,17 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Container from './Container';
 import Navigation from './Navigation';
 import NavigationLink from './NavigationLink';
 import HeaderWrap from './HeaderWrap';
-import urbica from '../../assets/svg/URBICA.svg';
+import Logo from './Logo';
 
 export default () => (
   <Container>
     <HeaderWrap>
-      <Link to="/">
-        <img src={urbica} alt="Urbica" />
-      </Link>
+      <Logo />
       <Navigation>
         <NavigationLink to="/projects">
           projects

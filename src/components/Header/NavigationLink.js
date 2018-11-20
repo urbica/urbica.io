@@ -12,8 +12,15 @@ const NavigationLink = styled(Link)`
   
   transition: opacity 0.3s;
 
-  &:hover {
-    opacity: 0.5;
+  @media (min-width: 850px) {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    padding: 0;
+    padding-right: 20px;
   }
 `;
 

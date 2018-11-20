@@ -28,7 +28,7 @@ export default () => (
       <Input id="email" type="email" placeholder="Email" />
       <Input id="phone" type="text" placeholder="Phone number" />
       <InputText id="text" placeholder="Ask us a question or tell us about your project" />
-      <Submit type="submit" />
+      <Submit type="submit" value="Submit" />
     </form>
   </Container>
 );

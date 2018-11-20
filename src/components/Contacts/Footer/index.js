@@ -23,10 +23,10 @@ export default () => (
       </Block>
       <Block>
         <div>
-          <Link to="/">face</Link>
+          <Link to="/">facebook</Link>
         </div>
         <div>
-          <Link to="/">medium</Link>
+          <Link to="/">instagram</Link>
         </div>
       </Block>
       <Block>

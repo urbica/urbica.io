@@ -14,8 +14,14 @@ const Arrow = styled(AnchorLink)`
   box-sizing: border-box;
   cursor: pointer;
   
-  &:hover {
-    opacity: 0.5;
+  @media (max-width: 850px) {
+    bottom: 150px;
+  }
+  
+  @media (min-width: 850px) {
+    &:hover {
+      opacity: 0.5;
+    }
   }
 `;
 
