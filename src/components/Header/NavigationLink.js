@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 
 const NavigationLink = styled(Link)`
   font-size: 30px;
-  line-height: 79px;
+  line-height: 73px;
+  padding-top: 5px;
   text-transform: uppercase;
   margin-left: 25px;
   text-decoration: none;
@@ -20,7 +21,8 @@ const NavigationLink = styled(Link)`
   }
   
   @media (max-width: 850px) {
-    padding: 0 20px 0 0;
+    margin-left: 0;
+    margin-right: 25px;
   }
 `;
 

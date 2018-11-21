@@ -38,6 +38,9 @@ const Container = styled.a`
   
   @media (max-width: 850px) {
     width: 100%;
+    :before {
+      background-blend-mode: normal;
+    }
   }
 `;
 
