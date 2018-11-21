@@ -31,6 +31,7 @@ export default class HTML extends React.Component {
         <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png" />
 
         <title>Urbica</title>
+        <meta name="description" content="We design data tools for getting is insights and making decisions" />
         {this.props.headComponents}
       </head>
       <body {...this.props.bodyAttributes}>
