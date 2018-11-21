@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import arrow from '../../assets/svg/Arrow.svg';
 
-export default styled(Link)`
+export default styled.a`
   position: relative;
   font-style: normal;
   font-weight: normal;

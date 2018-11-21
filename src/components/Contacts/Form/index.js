@@ -49,7 +49,7 @@ class Form extends Component {
           <InputText id="text" placeholder="Ask us a question or tell us about your project" />
           {
             submitted ? (
-              <Submit type="submit" value="Your message has been delivered" disable />
+              <Submit type="submit" value="Your message is sucсesfully sent" disable />
             ) : (
               <Submit type="submit" value="Submit" />
             )

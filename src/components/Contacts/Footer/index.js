@@ -15,25 +15,27 @@ export default () => (
       </Block>
       <Block>
         <div>
-          <Link to="/">twitter</Link>
+          <Link href="https://twitter.com/UrbicaDesign" target="_blank">twitter</Link>
         </div>
         <div>
-          <Link to="/">medium</Link>
+          <Link href="https://medium.com/@urbica.co" target="_blank">medium</Link>
         </div>
       </Block>
       <Block>
         <div>
-          <Link to="/">facebook</Link>
+          <Link href="https://www.facebook.com/urbica.co/" target="_blank">facebook</Link>
         </div>
         <div>
-          <Link to="/">instagram</Link>
+          <Link href="https://www.instagram.com/urbica_design/" target="_blank">instagram</Link>
         </div>
       </Block>
       <Block>
         <div>
-          <Link to="/">hello@urbica.co</Link>
+          <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
         </div>
-        +7 916 627 16 46
+        <Link href="tel:+79166271646" disableArrow>
+          +7 916 627 16 46
+        </Link>
       </Block>
     </Content>
   </Container>

@@ -16,9 +16,9 @@ export default () => (
           Let’s get in touch
         </Title>
         <Text>
-          Fill the following form or tell us about your project on
+          Fill the form or contact us on
         </Text>
-        <Link href="/">hello@urbica.co</Link>
+        <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
       </Content>
       <Form />
     </Main>

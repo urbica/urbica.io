@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import arrow from '../../../assets/svg/Arrow.svg';
 
-export default styled(Link)`
+export default styled.a`
   position: relative;
   font-style: normal;
   font-weight: normal;
@@ -14,6 +13,7 @@ export default styled(Link)`
   transition: opacity 0.3s;
   
   &:after {
+    display: ${({ disableArrow }) => (disableArrow ? 'none' : 'block')};
     position: absolute;
     content: '';
     right: -35px;
