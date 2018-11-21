@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const NavigationLink = styled(Link)`
   font-size: 30px;
-  line-height: 73px;
+  line-height: 71px;
   padding-top: 5px;
   text-transform: uppercase;
   margin-left: 25px;

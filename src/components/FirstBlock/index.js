@@ -10,12 +10,11 @@ export default () => (
   <Container>
     <Wrap disableBorder style={{ paddingTop: 60 }}>
       <Title>
-        We design rich data tools and visualisations that help our customers leverage data for business insights and
-        decision-making
+        WE DESIGN DATA TOOLS FOR GETTING INSIGHTS AND MAKING DECISIONS
       </Title>
       <Media query={{ maxWidth: 850 }}>
         {
-          matches => (matches ? (<Arrow offset="190" href="#whatWeDo" />)
+          matches => (matches ? (<Arrow offset="184" href="#whatWeDo" />)
             : (<Arrow offset="80" href="#whatWeDo" />))
         }
       </Media>

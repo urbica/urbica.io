@@ -8,6 +8,7 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: 'DecimaMonoPro';
+    font-display: auto;
     font-style: normal;
     font-weight: normal;
     src: url(${DecimaMonoProOtf}) format('opentype'),
