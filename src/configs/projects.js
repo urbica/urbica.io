@@ -37,7 +37,7 @@ export default [
   },
   {
     title: 'Walkstreets',
-    description: 'UI/UX design, map design, app',
+    description: 'Мost comfortable walking routes',
     url: 'https://v3.urbica.co/walkstreets',
     img: '/images/projects/ws.jpg',
   },
