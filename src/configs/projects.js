@@ -8,7 +8,7 @@ export default [
   {
     title: 'AReal APP',
     description: 'UI/UX design, map design, app',
-    url: '/',
+    url: 'https://areal.urbica.co/',
     img: '/images/projects/arial.jpeg',
   },
   {

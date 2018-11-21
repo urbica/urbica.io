@@ -15,7 +15,7 @@ const Arrow = styled(AnchorLink)`
   cursor: pointer;
   
   @media (max-width: 850px) {
-    bottom: 60px;
+    bottom: 120px;
   }
   
   @media (min-width: 850px) {
