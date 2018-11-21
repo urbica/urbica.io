@@ -9,7 +9,7 @@ export default [
   },
   {
     title: 'UI/UX\n design',
-    text: 'Human centered approach to improve experience\n',
+    text: 'Human centered approach to improving experience',
   },
   {
     title: 'Research & Development',

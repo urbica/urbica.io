@@ -10,8 +10,8 @@ export default () => (
   <Container>
     <Wrap disableBorder style={{ paddingTop: 60 }}>
       <Title>
-        We design rich data tools and applications that help our customers to leverage data getting powerful insights
-        and make better decisions.
+        We design rich data tools and visualisations that help our customers leverage data for business insights and
+        decision-making.
       </Title>
       <Media query={{ maxWidth: 850 }}>
         {

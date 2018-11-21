@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  max-width: 70%;
+  max-width: 60%;
   line-height: calc(100vw / 25);
   font-size: calc(100vw / 30);
   text-transform: uppercase;

@@ -10,7 +10,7 @@ const LinkWithArrow = styled(Link)`
   font-size: 20px;
   text-decoration-line: underline;
 
-  color: #FFFFFF;
+  color: #CCCCCC;
   
   transition: opacity 0.3s;
   

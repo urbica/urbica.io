@@ -10,10 +10,16 @@ export default () => (
     <HeaderWrap>
       <Logo />
       <Navigation>
-        <NavigationLink to="/projects">
+        <NavigationLink
+          to="/projects"
+          activeStyle={{ borderBottom: '3px solid #ccc' }}
+        >
           projects
         </NavigationLink>
-        <NavigationLink to="/contacts">
+        <NavigationLink
+          to="/contacts"
+          activeStyle={{ borderBottom: '3px solid #ccc' }}
+        >
           contacts
         </NavigationLink>
       </Navigation>

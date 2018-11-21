@@ -1,11 +1,10 @@
 export default [
-  { name: 'Яндекс', url: '/partners_logo/Yandex_logo_en.png' },
-  { name: 'mapbox', url: '/partners_logo/Mapbox_Logo.png' },
+  { name: 'Яндекс', url: '/partners_logo/yandex.png' },
+  { name: 'mapbox', url: '/partners_logo/mapbox.png' },
+  { name: 'pik', url: '/partners_logo/pik.png' },
+  { name: 'dvorulitca', url: '/partners_logo/dvorulica.png' },
+  { name: 'dt', url: '/partners_logo/dt.png' },
+  { name: 'mapsme', url: '/partners_logo/mapsme.png' },
+  { name: 'autoru', url: '/partners_logo/autoru_new.png' },
   { name: 'gulag', url: '/partners_logo/gulag.png' },
-  { name: 'dt', url: '/partners_logo/logo_moscow.png' },
-  { name: 'sber', url: '/partners_logo/sber.png' },
-  { name: 'pik', url: '/partners_logo/PIK_logo.png' },
-  { name: 'velobike', url: '/partners_logo/velobike.png' },
-  { name: 'mapsme', url: '/partners_logo/MAPS.png' },
-  { name: 'img', url: '/partners_logo/img.png' },
 ];

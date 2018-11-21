@@ -2,25 +2,25 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const NavigationLink = styled(Link)`
-  line-height: normal;
   font-size: 30px;
+  line-height: 79px;
   text-transform: uppercase;
-  padding: 0 25px;
+  margin-left: 25px;
   text-decoration: none;
+  border-bottom: 3px solid transparent;
 
-  color: #CCCCCC;
+  color: rgba(204, 204, 204, 1);
   
-  transition: opacity 0.3s;
+  transition: color 0.3s;
 
   @media (min-width: 850px) {
     &:hover {
-      opacity: 0.5;
+      color: rgba(204, 204, 204, 0.5);
     }
   }
   
   @media (max-width: 850px) {
-    padding: 0;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
   }
 `;
 
