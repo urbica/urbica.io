@@ -43,9 +43,7 @@ class Form extends Component {
       <Container>
         <form onSubmit={this.handleSubmit}>
           <Input id="name" type="text" placeholder="Name" />
-          <Input id="company" type="text" placeholder="Company name" />
-          <Input id="email" type="email" placeholder="Email" />
-          <Input id="phone" type="text" placeholder="Phone number" />
+          <Input id="phone" type="text" placeholder="Email or phone number" />
           <InputText id="text" placeholder="Ask us a question or tell us about your project" />
           {
             submitted ? (
