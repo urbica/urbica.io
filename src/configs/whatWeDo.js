@@ -5,7 +5,7 @@ export default [
   },
   {
     title: 'Digital Map design',
-    text: 'We love maps, we love useful and aesthetic maps',
+    text: 'We love useful and aesthetic maps',
   },
   {
     title: 'UI/UX\n design',
