@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.input`
   font-size: 30px;
   color: #cccccc;
-  text-decoration: underline;
+  text-decoration: ${({ disable }) => (disable ? 'none' : 'underline')};
   background: none;
   border: none;
   outline: none;
