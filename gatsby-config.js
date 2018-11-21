@@ -13,10 +13,19 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-yandex-metrika',
+      options: {
+        trackingId: 31411338,
+        clickmap: true,
+        webvisor: true,
+        trackHash: true,
+      },
+    },
   ],
   siteMetadata: {
     title: 'Urbica',
     description: 'description',
   },
-  pathPrefix: '/urbica.co',
+  pathPrefix: '/',
 };
