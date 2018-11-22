@@ -13,10 +13,6 @@ const Container = styled.div`
   color: #cccccc;
   
   cursor: pointer;
-  
-  &:hover {
-    opacity: 0.5;
-  }
 `;
 
 export default Container;

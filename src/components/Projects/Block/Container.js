@@ -25,10 +25,24 @@ const Container = styled.a`
     cursor: pointer;
     opacity: ${({ loading }) => (!loading ? 1 : 0.5)};
   }
+  
+  > div:first-child {
+      // arrow animation
+    > div {
+      transition: transform 0.5s;
+    }
+  }
 
   &:hover {
     :before {
       background-color: rgba(255,255,255,0);
+    }
+    
+    > div:first-child {
+      // arrow animation
+      > div {
+        transform: rotate(-90deg) translateY(10px);
+      }
     }
   }
   

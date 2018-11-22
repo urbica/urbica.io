@@ -14,6 +14,14 @@ const Arrow = styled(AnchorLink)`
   box-sizing: border-box;
   cursor: pointer;
   
+  @keyframes jump {
+    from {bottom: 40px;}
+    50% {bottom: 30px;}
+    to {bottom: 40px;}
+  }
+  
+  animation: jump 1s infinite ease-in-out;
+  
   @media (max-width: 850px) {
     bottom: 120px;
   }
