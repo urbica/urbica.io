@@ -19,7 +19,11 @@ export default styled.div`
   
   @media (max-width: 850px) {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     flex-shrink: 0;
+    
+    div {
+      padding: 20px 0;
+    }
   }
 `;
