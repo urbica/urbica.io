@@ -20,10 +20,17 @@ const Arrow = styled(AnchorLink)`
     to {bottom: 40px;}
   }
   
+  @keyframes jumpmobile {
+    from {bottom: 130px;}
+    50% {bottom: 120px;}
+    to {bottom: 130px;}
+  }
+  
   animation: jump 1s infinite ease-in-out;
   
   @media (max-width: 850px) {
     bottom: 120px;
+    animation: jumpmobile 1s infinite ease-in-out;
   }
   
   @media (min-width: 850px) {
