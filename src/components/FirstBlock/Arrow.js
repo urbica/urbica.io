@@ -15,22 +15,22 @@ const Arrow = styled(AnchorLink)`
   cursor: pointer;
   
   @keyframes jump {
-    from {bottom: 40px;}
+    from {bottom: 45px;}
     50% {bottom: 30px;}
-    to {bottom: 40px;}
+    to {bottom: 45px;}
   }
   
   @keyframes jumpmobile {
-    from {bottom: 130px;}
+    from {bottom: 135px;}
     50% {bottom: 120px;}
-    to {bottom: 130px;}
+    to {bottom: 135px;}
   }
   
-  animation: jump 1s infinite ease-in-out;
+  animation: jump 1.5s infinite linear;
   
   @media (max-width: 850px) {
     bottom: 120px;
-    animation: jumpmobile 1s infinite ease-in-out;
+    animation: jumpmobile 1.5s infinite linear;
   }
   
   @media (min-width: 850px) {
