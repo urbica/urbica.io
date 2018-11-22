@@ -19,11 +19,9 @@ const Container = styled.a`
     background-image: url(${({ img }) => img});
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(${({ loading }) => (loading ? '4px' : '0px')});
     background-blend-mode: luminosity;
     background-size: cover;
     cursor: pointer;
-    opacity: ${({ loading }) => (!loading ? 1 : 0.5)};
   }
   
   > div:first-child {

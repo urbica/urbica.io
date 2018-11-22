@@ -1,13 +1,11 @@
 import React from 'react';
-import { withPrefix } from 'gatsby';
-import ProgressiveImage from 'react-progressive-image';
 import PropTypes from 'prop-types';
+import { withPrefix } from 'gatsby';
 
 import Container from './Container';
 import Title from './Title';
 import Text from './Text';
 import Arrow from './Arrow';
-import getThumbUrl from '../../../utils/getThumbUrl';
 
 const Block = (props) => {
   const {
@@ -18,25 +16,17 @@ const Block = (props) => {
   } = props;
 
   return (
-    <ProgressiveImage
-      src={withPrefix(img)}
-      placeholder={withPrefix(getThumbUrl(img))}
+    <Container
+      href={url}
+      img={withPrefix(img)}
+      target="_blank"
     >
-      {(src, loading) => (
-        <Container
-          href={url}
-          img={src}
-          loading={loading}
-          target="_blank"
-        >
-          <Title>
-            {title}
-            <Arrow />
-          </Title>
-          <Text>{description}</Text>
-        </Container>
-      )}
-    </ProgressiveImage>
+      <Title>
+        {title}
+        <Arrow />
+      </Title>
+      <Text>{description}</Text>
+    </Container>
   );
 };
 
