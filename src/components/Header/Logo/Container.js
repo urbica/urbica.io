@@ -6,6 +6,7 @@ const Container = styled(Link)`
   padding-bottom: 30px;
   transition: opacity 0.3s;
   font-size: 30px;
+  letter-spacing: 3px;
   line-height: 33px;
   text-transform: uppercase;
   text-decoration: none;
