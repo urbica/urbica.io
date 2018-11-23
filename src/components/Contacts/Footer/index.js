@@ -15,7 +15,7 @@ export default () => (
         {
           matches => (
             <>
-              <Block style={{ maxWidth: matches ? '100%' : '33%' }}>
+              <Block address>
                 Russia, Moscow, 3rd  Monetchikovsky lane, 11/1
               </Block>
               {matches && (

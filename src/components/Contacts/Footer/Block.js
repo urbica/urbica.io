@@ -11,6 +11,8 @@ export default styled.div`
   color: #cccccc;
   opacity: 0.8;
   
+  width: ${({ address }) => (address ? '33%' : 'auto')};
+  
   @media (max-width: 1200px) {
     width: calc(50% - 30px);
     padding-bottom: 50px;
