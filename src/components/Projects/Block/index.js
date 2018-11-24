@@ -18,10 +18,12 @@ const Block = ({ content }) => {
   return (
     <Container
       href={url}
-      img={img}
       target="_blank"
     >
-      <Image fluid={img.childImageSharp.fluid} />
+      <Image
+        fluid={img.childImageSharp.fluid}
+        placeholderStyle={{ filter: 'blur(10px)' }}
+      />
       <Title>
         {title}
         <Arrow />
@@ -35,7 +37,7 @@ Block.propTypes = {
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    img: PropTypes.node.isRequired,
+    img: PropTypes.object.isRequired,
     url: PropTypes.string.isRequired
   }).isRequired
 };

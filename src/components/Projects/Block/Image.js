@@ -7,6 +7,7 @@ const Image = styled(Img)`
   background-color: rgba(12,16,25,1);
   cursor: pointer;
   height: 0;
+  transition: 0.3s;
 `;
 
 export default Image;
