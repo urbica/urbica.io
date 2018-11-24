@@ -1,12 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Container from './Container';
 import Section from './Section';
 
-import projects from '../../configs/projects';
-import technologies from '../../configs/technologies';
-
-export default () => (
+const Projects = ({ projects, technologies }) => (
   <Container>
     <Section
       title="Selected projects"
@@ -20,3 +18,10 @@ export default () => (
     />
   </Container>
 );
+
+Projects.propTypes = {
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.object).isRequired
+};
+
+export default Projects;

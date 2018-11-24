@@ -25,11 +25,8 @@ const Section = (props) => {
         {
           content.map(item => (
             <Block
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              img={item.img}
-              url={item.url}
+              key={item.node.id}
+              content={item.node}
             />
           ))
         }

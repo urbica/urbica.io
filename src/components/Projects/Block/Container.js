@@ -9,36 +9,27 @@ const Container = styled.a`
   cursor: pointer;
   overflow: hidden;
   text-decoration: none;
-
-  &::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-    transition: background-color 0.3s;
-    background-color: rgba(12,16,25,1);
-    background-image: url(${({ img }) => img});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    background-size: cover;
-    cursor: pointer;
+  
+  div:first-child {
+    transition: filter 0.3s;
+    filter: saturate(0%);
   }
   
-  > div:first-child {
+  div:nth-child(2) {
       // arrow animation
-    > div {
+    div {
       transition: transform 0.5s;
     }
   }
 
   &:hover {
-    :before {
-      background-color: rgba(255,255,255,0);
+    div:first-child {
+      filter: saturate(100%);
     }
     
-    > div:first-child {
+    div:nth-child(2) {
       // arrow animation
-      > div {
+      div {
         transform: rotate(-90deg) translateY(10px);
       }
     }

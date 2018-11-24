@@ -1,26 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby';
 
 import Container from './Container';
 import Title from './Title';
 import Text from './Text';
 import Arrow from './Arrow';
+import Image from './Image';
 
-const Block = (props) => {
+const Block = ({ content }) => {
   const {
     title,
     description,
     img,
     url,
-  } = props;
+  } = content;
 
   return (
     <Container
       href={url}
-      img={withPrefix(img)}
+      img={img}
       target="_blank"
     >
+      <Image fluid={img.childImageSharp.fluid} />
       <Title>
         {title}
         <Arrow />
@@ -31,10 +32,12 @@ const Block = (props) => {
 };
 
 Block.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  content: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    img: PropTypes.node.isRequired,
+    url: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Block;
