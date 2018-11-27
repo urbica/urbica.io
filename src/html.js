@@ -16,7 +16,7 @@ export default class HTML extends React.Component {
         <meta property="og:url" content="http://urbica.co" />
         <meta property="og:title" content="Urbica" />
         <meta property="og:description" content="We design data tools for getting is insights and making decisions" />
-        <meta property="og:image" content="http://urbica.co/urbica.jpg" />
+        <meta property="og:image" content="http://urbica.co/fb.jpg" />
 
         <title>Urbica</title>
         <meta name="description" content="We design data tools for getting is insights and making decisions" />
