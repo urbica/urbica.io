@@ -10,7 +10,7 @@ export default () => (
   <Container>
     <Wrap disableBorder style={{ paddingTop: 60 }}>
       <Title>
-        WE DESIGN DATA TOOLS FOR GETTING INSIGHTS AND MAKING DECISIONS
+        DESIGNING TOOLS FOR DATA-DRIVEN INSIGHT AND PROBLEM-SOLVING
       </Title>
       <Media query={{ maxWidth: 850 }}>
         {

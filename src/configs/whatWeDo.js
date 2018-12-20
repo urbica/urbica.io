@@ -1,7 +1,7 @@
 export default [
   {
     title: 'Data visualisation',
-    text: 'Extracting and highlighting meaningful insights',
+    text: 'Discover trends and decipher big data',
   },
   {
     title: 'Digital Map design',
@@ -9,7 +9,7 @@ export default [
   },
   {
     title: 'UI/UX\n design',
-    text: 'Human centered approach',
+    text: 'Human-centered approach',
   },
   {
     title: 'Research & Development',
