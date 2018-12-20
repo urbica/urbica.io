@@ -2,6 +2,7 @@ import React from 'react';
 import Container from './Container';
 import Navigation from './Navigation';
 import NavigationLink from './NavigationLink';
+import NavigationA from './NavigationA';
 import HeaderWrap from './HeaderWrap';
 import Logo from './Logo';
 
@@ -22,6 +23,13 @@ export default () => (
         >
           contacts
         </NavigationLink>
+        <NavigationA
+          href="https://medium.com/@Urbica.co"
+          target="_blank"
+          activeStyle={{ borderBottom: '3px solid #ccc' }}
+        >
+          BLOG
+        </NavigationA>
       </Navigation>
     </HeaderWrap>
   </Container>
