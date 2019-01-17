@@ -1,11 +1,16 @@
 # urbica.co
 
-## Running in development
-`git clone https://github.com/urbica/urbica.co.git`
+## Development
 
-`yarn`
+```shell
+git clone https://github.com/urbica/urbica.co.git
+cd urbica.co
+yarn
+yarn start
+```
 
-`yarn start`
+## Deployment
 
-## Deploy
-`yarn deploy`
+```shell
+yarn deploy
+```
