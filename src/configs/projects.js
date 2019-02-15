@@ -1,5 +1,11 @@
 export default [
   {
+    title: 'Recyclemap',
+    description: 'Redesigning a map for Greenpeace Russia',
+    url: 'https://medium.com/@Urbica.co/recyclemap-redesigning-a-map-for-greenpeace-russia-f540d3956981',
+    img: '/images/projects/greenpeace.jpg',
+  },
+  {
     title: 'Map of GULAG History',
     description: 'Сhronology of the Soviet labour camps system',
     url: 'https://v3.urbica.co/gulag',
@@ -41,4 +47,5 @@ export default [
     url: 'https://v3.urbica.co/walkstreets',
     img: '/images/projects/ws.jpg',
   },
+  null,
 ];

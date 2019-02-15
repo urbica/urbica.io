@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Title from '../Title';
 import Content from './Content';
 import Block from './Block';
+import EmptyBlock from './EmptyBlock';
+
 import Wrap from '../Wrap';
 import Footer from '../Footer';
 
@@ -23,15 +25,21 @@ const Section = (props) => {
       <Title>{title}</Title>
       <Content>
         {
-          content.map(item => (
-            <Block
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              img={item.img}
-              url={item.url}
-            />
-          ))
+          content.map((item) => {
+            if (item) {
+              return (
+                <Block
+                  key={item.title}
+                  title={item.title}
+                  description={item.description}
+                  img={item.img}
+                  url={item.url}
+                />
+              );
+            }
+
+            return <EmptyBlock />;
+          })
         }
       </Content>
       {footer && <Footer />}
