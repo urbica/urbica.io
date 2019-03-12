@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { injectIntl } from 'react-intl';
 import 'normalize.css';
 
 import Header from '../Header';
@@ -8,12 +9,12 @@ import Container from './Container';
 import GlobalStyles from '../GlobalStyles';
 import ErrorBoundary from '../ErrorBoundary';
 
-const Layout = ({ title, children }) => (
+const Layout = ({ children, intl }) => (
   <ErrorBoundary>
     <Container>
       <GlobalStyles />
       <Helmet>
-        <title>{title}</title>
+        <title>{intl.formatMessage({ id: 'title' })}</title>
       </Helmet>
       <Header />
       {children}
@@ -22,12 +23,8 @@ const Layout = ({ title, children }) => (
 );
 
 Layout.propTypes = {
-  title: PropTypes.string,
   children: PropTypes.node.isRequired,
+  intl: PropTypes.object.isRequired,
 };
 
-Layout.defaultProps = {
-  title: 'Urbica',
-};
-
-export default Layout;
+export default injectIntl(Layout);

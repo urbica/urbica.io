@@ -1,13 +1,18 @@
 import React from 'react';
+import { withIntl } from '../i18n';
+
 import Layout from '../components/Layout';
 import FirstBlock from '../components/FirstBlock';
 import WhatWeDoBlock from '../components/WhatWeDoBlock';
 import WeAreTrusted from '../components/WeAreTrustedBlock';
 
-export default () => (
+const IndexPage = () => (
   <Layout>
     <FirstBlock />
     <WhatWeDoBlock />
     <WeAreTrusted />
   </Layout>
 );
+
+
+export default withIntl(IndexPage);
