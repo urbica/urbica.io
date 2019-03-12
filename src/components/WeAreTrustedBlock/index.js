@@ -1,5 +1,6 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
+import { injectIntl } from 'react-intl';
 
 import Title from '../Title';
 import Wrap from '../Wrap';
@@ -11,11 +12,11 @@ import Footer from '../Footer';
 
 import images from '../../configs/weAreTrusted';
 
-export default () => (
+const WeAreTrusted = ({ intl }) => (
   <Container>
     <Wrap>
       <div>
-        <Title>We are trusted</Title>
+        <Title>{intl.messages.weAreTrusted.title}</Title>
         <Contanet>
           {
             images.map(({ name, url }) => (
@@ -30,3 +31,5 @@ export default () => (
     </Wrap>
   </Container>
 );
+
+export default injectIntl(WeAreTrusted);

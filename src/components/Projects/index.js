@@ -1,4 +1,5 @@
 import React from 'react';
+import { injectIntl } from 'react-intl';
 
 import Container from './Container';
 import Section from './Section';
@@ -6,10 +7,10 @@ import Section from './Section';
 import projects from '../../configs/projects';
 import technologies from '../../configs/technologies';
 
-export default () => (
+const Projects = ({ intl }) => (
   <Container>
     <Section
-      title="Selected projects"
+      title={intl.messages.projects.title}
       content={projects}
       disableBorder
     />
@@ -20,3 +21,5 @@ export default () => (
     />
   </Container>
 );
+
+export default injectIntl(Projects);

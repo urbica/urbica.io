@@ -1,9 +1,13 @@
 import React from 'react';
+import { withIntl } from '../i18n';
+
 import Layout from '../components/Layout';
 import Projects from '../components/Projects';
 
-export default () => (
+const ProjectsPage = () => (
   <Layout>
     <Projects />
   </Layout>
 );
+
+export default withIntl(ProjectsPage);

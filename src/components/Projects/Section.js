@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
 
 import Title from '../Title';
 import Content from './Content';
@@ -15,6 +16,7 @@ const Section = (props) => {
     content,
     disableBorder,
     footer,
+    intl,
   } = props;
 
   return (
@@ -30,8 +32,8 @@ const Section = (props) => {
               return (
                 <Block
                   key={item.title}
-                  title={item.title}
-                  description={item.description}
+                  title={intl.messages.projects[item.title]}
+                  description={intl.messages.projects[item.description]}
                   img={item.img}
                   url={item.url}
                 />
@@ -59,4 +61,4 @@ Section.defaultProps = {
   footer: false,
 };
 
-export default Section;
+export default injectIntl(Section);

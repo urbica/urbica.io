@@ -19,23 +19,23 @@ const Header = ({ intl }) => (
           to="/projects"
           activeStyle={{ borderBottom: '3px solid #ccc' }}
         >
-          {intl.messages['header.projects']}
+          {intl.messages.header.projects}
         </NavigationLink>
         <NavigationLink
           to="/contacts"
           activeStyle={{ borderBottom: '3px solid #ccc' }}
         >
-          {intl.messages['header.contacts']}
+          {intl.messages.header.contacts}
         </NavigationLink>
         <NavigationSimpleLink
           href="https://medium.com/@Urbica.co"
           target="_blank"
           activeStyle={{ borderBottom: '3px solid #ccc' }}
         >
-          {intl.messages['header.blog']}
+          {intl.messages.header.blog}
         </NavigationSimpleLink>
         <Language to={intl.locale === 'en' ? '/ru' : '/en'}>
-          {intl.messages['header.language']}
+          {intl.messages.header.language}
         </Language>
       </Navigation>
     </HeaderWrap>

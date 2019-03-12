@@ -1,4 +1,6 @@
 import React from 'react';
+import { injectIntl } from 'react-intl';
+
 import Container from './Container';
 import Wrap from '../Wrap';
 import Title from '../Title';
@@ -6,7 +8,7 @@ import Content from './Content';
 import Block from './Block';
 import data from '../../configs/whatWeDo';
 
-export default () => (
+const WhatWeDo = ({ intl }) => (
   <Container id="whatWeDo">
     <Wrap
       disableTopBorder
@@ -14,12 +16,16 @@ export default () => (
     >
       <div>
         <Title>
-          What we do
+          {intl.messages.whatWeDo.title}
         </Title>
         <Content>
           {
             data.map(({ title, text }) => (
-              <Block key={title} title={title} text={text} />
+              <Block
+                key={title}
+                title={intl.messages.whatWeDo[title]}
+                text={intl.messages.whatWeDo[text]}
+              />
             ))
           }
         </Content>
@@ -27,3 +33,5 @@ export default () => (
     </Wrap>
   </Container>
 );
+
+export default injectIntl(WhatWeDo);

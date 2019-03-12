@@ -1,26 +1,26 @@
 export default [
   {
-    title: 'Data visualisation',
-    text: 'Discover trends and decipher big data',
+    title: 'visualisation.title',
+    text: 'visualisation.description',
   },
   {
-    title: 'Digital Map design',
-    text: 'We love useful and aesthetic maps',
+    title: 'ui-ux.title',
+    text: 'ui-ux.description',
   },
   {
-    title: 'UI/UX\n design',
-    text: 'Human-centered approach',
+    title: 'map.title',
+    text: 'map.description',
   },
   {
-    title: 'Research & Development',
-    text: 'Prototyping and validating ideas',
+    title: 'research.title',
+    text: 'research.description',
   },
   {
-    title: 'Software development',
-    text: 'Developing solid applications and services',
+    title: 'dev.title',
+    text: 'dev.description',
   },
   {
-    title: 'Geo-analytics',
-    text: 'Data collection and processing',
+    title: 'geo.title',
+    text: 'geo.description',
   },
 ];

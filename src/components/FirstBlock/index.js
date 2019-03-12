@@ -12,7 +12,7 @@ const FirstBlock = ({ intl }) => (
   <Container>
     <Wrap disableBorder style={{ paddingTop: 60 }}>
       <Title>
-        {intl.messages['firstBlock.title']}
+        {intl.messages.firstBlock.title}
       </Title>
       <Media query={{ maxWidth: 850 }}>
         {
