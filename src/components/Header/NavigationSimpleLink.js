@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavigationLink = styled.a`
+const NavigationSimpleLink = styled.a`
   font-size: 30px;
   line-height: 71px;
   padding-top: 5px;
@@ -25,4 +25,4 @@ const NavigationLink = styled.a`
   }
 `;
 
-export default NavigationLink;
+export default NavigationSimpleLink;
