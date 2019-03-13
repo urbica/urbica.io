@@ -1,12 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
+
 import Container from './Container';
 
 import Title from '../Title';
 import LinkWithArrow from '../LinkWithArrow';
 
-export default () => (
+const Footer = ({ intl }) => (
   <Container>
-    <Title>Let’s get in touch</Title>
-    <LinkWithArrow to="/contacts">Work with us</LinkWithArrow>
+    <Title>{intl.messages.contacts.title}</Title>
+    <LinkWithArrow to="/contacts">{intl.messages.contacts.link}</LinkWithArrow>
   </Container>
 );
+
+Footer.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
+
+export default injectIntl(Footer);

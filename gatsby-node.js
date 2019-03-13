@@ -1,23 +1,26 @@
 const path = require('path');
 const { languages } = require('./src/i18n/locales');
 
-// const redirects = [
-//   ['/bikes', 'https://urbica.github.io/bikes/'],
-//   ['/citibike', 'https://urbica.github.io/citibike/'],
-//   ['/hills', 'https://urbica.github.io/hills/'],
-//   ['/velo', 'https://urbica.github.io/velo/'],
-// ];
-//
-// redirects.forEach(([fromPath, toPath]) => {
-//   createRedirect({
-//     fromPath,
-//     toPath,
-//     isPermanent: true,
-//   });
-// });
+const redirects = [
+  ['/bikes', 'https://urbica.github.io/bikes/'],
+  ['/citibike', 'https://urbica.github.io/citibike/'],
+  ['/hills', 'https://urbica.github.io/hills/'],
+  ['/velo', 'https://urbica.github.io/velo/'],
+];
+
+exports.createPages = ({ actions }) => {
+  const { createRedirect } = actions;
+
+  redirects.forEach(([fromPath, toPath]) => {
+    createRedirect({
+      fromPath,
+      toPath,
+      isPermanent: true,
+    });
+  });
+};
 
 exports.onCreatePage = ({ page, actions }) => {
-  // const { createRedirect } = actions;
   const { createPage, deletePage } = actions;
 
   if (page.path.includes('404')) {

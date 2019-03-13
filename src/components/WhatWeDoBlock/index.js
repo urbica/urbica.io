@@ -1,5 +1,6 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
+import PropTypes from 'prop-types';
 
 import Container from './Container';
 import Wrap from '../Wrap';
@@ -33,5 +34,10 @@ const WhatWeDo = ({ intl }) => (
     </Wrap>
   </Container>
 );
+
+WhatWeDo.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
+
 
 export default injectIntl(WhatWeDo);

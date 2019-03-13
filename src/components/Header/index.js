@@ -10,7 +10,7 @@ import Language from './Language';
 import HeaderWrap from './HeaderWrap';
 import Logo from './Logo';
 
-const Header = ({ intl }) => (
+const Header = ({ intl, location }) => (
   <Container>
     <HeaderWrap>
       <Logo />
@@ -34,7 +34,7 @@ const Header = ({ intl }) => (
         >
           {intl.messages.header.blog}
         </NavigationSimpleLink>
-        <Language to={intl.locale === 'en' ? '/ru' : '/en'}>
+        <Language to={location.pathname.replace(`/${intl.locale}`, intl.locale === 'en' ? '/ru' : '/en')}>
           {intl.messages.header.language}
         </Language>
       </Navigation>
@@ -44,6 +44,7 @@ const Header = ({ intl }) => (
 
 Header.propTypes = {
   intl: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export default injectIntl(Header);

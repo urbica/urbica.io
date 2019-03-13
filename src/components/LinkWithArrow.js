@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link } from '../i18n';
 import arrow from '../assets/svg/Arrow.svg';
 
 const LinkWithArrow = styled(Link)`

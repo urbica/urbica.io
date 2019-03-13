@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link } from '../../i18n';
 
 const NavigationLink = styled(Link)`
   font-size: 30px;

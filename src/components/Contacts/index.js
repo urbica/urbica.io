@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
+
 import Container from './Container';
 import Main from './Main';
 import Content from './Content';
@@ -8,15 +11,15 @@ import Text from './Text';
 import Link from './Link';
 import Footer from './Footer';
 
-export default () => (
+const Contacts = ({ intl }) => (
   <Container>
     <Main>
       <Content>
         <Title>
-          Let’s get in touch
+          {intl.messages.contacts.title}
         </Title>
         <Text>
-          Fill the form or contact us on
+          {intl.messages.contacts.text}
         </Text>
         <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
       </Content>
@@ -25,3 +28,9 @@ export default () => (
     <Footer />
   </Container>
 );
+
+Contacts.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
+
+export default injectIntl(Contacts);

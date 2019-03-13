@@ -1,5 +1,6 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
+import PropTypes from 'prop-types';
 
 import Container from './Container';
 import Section from './Section';
@@ -21,5 +22,9 @@ const Projects = ({ intl }) => (
     />
   </Container>
 );
+
+Projects.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
 
 export default injectIntl(Projects);

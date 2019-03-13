@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { injectIntl } from 'react-intl';
 
 import Container from './Container';
 import Input from './Input';
@@ -8,17 +9,11 @@ import Submit from './Submit';
 import parseForm from '../../../utils/parseForm';
 
 class Form extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    submitted: false,
+  };
 
-    this.state = {
-      submitted: false,
-    };
-
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     const { submitted } = this.state;
     e.preventDefault();
     const values = { fields: parseForm(e.target) };
@@ -34,15 +29,16 @@ class Form extends Component {
           }
         });
     }
-  }
+  };
 
   render() {
+    const { intl } = this.props;
     const { submitted } = this.state;
 
     return (
       <Container>
         <form onSubmit={this.handleSubmit}>
-          <Input id="name" type="text" placeholder="Name" />
+          <Input id="name" type="text" placeholder={intl.messages.form.name} />
           <Input id="phone" type="text" placeholder="Email or phone number" />
           <InputText id="text" placeholder="Ask us a question or tell us about your project" />
           {
@@ -58,4 +54,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default injectIntl(Form);

@@ -40,7 +40,7 @@ const Section = (props) => {
               );
             }
 
-            return <EmptyBlock />;
+            return <EmptyBlock key="empty" />;
           })
         }
       </Content>
@@ -54,6 +54,7 @@ Section.propTypes = {
   content: PropTypes.arrayOf(PropTypes.object).isRequired,
   disableBorder: PropTypes.bool,
   footer: PropTypes.bool,
+  intl: PropTypes.object.isRequired,
 };
 
 Section.defaultProps = {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby';
 import { injectIntl } from 'react-intl';
 
@@ -31,5 +32,9 @@ const WeAreTrusted = ({ intl }) => (
     </Wrap>
   </Container>
 );
+
+WeAreTrusted.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
 
 export default injectIntl(WeAreTrusted);

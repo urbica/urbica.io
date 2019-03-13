@@ -55,4 +55,14 @@ module.exports = {
     'react-map-gl.title': 'react-map-gl',
     'react-map-gl.description': 'React Component for Mapbox GL JS',
   },
+  contacts: {
+    title: 'Let’s get in touch',
+    text: 'Fill the form or contact us on',
+    link: 'Work with us',
+  },
+  form: {
+    name: 'Name',
+    email: 'Email or phone number',
+    text: 'Ask us a question or tell us about your project',
+  },
 };
