@@ -6,14 +6,14 @@ import { injectIntl } from 'react-intl';
 import Container from './Container';
 import Arrow from './Arrow';
 import Wrap from '../Wrap';
-import Title from '../BigTitle';
+import BigTitle from '../BigTitle';
 
 const FirstBlock = ({ intl }) => (
   <Container>
     <Wrap disableBorder style={{ paddingTop: 60 }}>
-      <Title>
+      <BigTitle locale={intl.locale}>
         {intl.messages.firstBlock.title}
-      </Title>
+      </BigTitle>
       <Media query={{ maxWidth: 850 }}>
         {
           matches => (matches ? (<Arrow offset="184" href="#whatWeDo" />)

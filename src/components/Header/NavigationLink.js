@@ -6,7 +6,7 @@ const NavigationLink = styled(Link)`
   line-height: 71px;
   padding-top: 5px;
   text-transform: uppercase;
-  margin-left: 25px;
+  margin-left: 30px;
   text-decoration: none;
   border-bottom: 3px solid transparent;
 

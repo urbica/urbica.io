@@ -8,8 +8,9 @@ const Language = styled(Link)`
   line-height: 71px;
   padding-top: 5px;
   padding-left: 40px;
-  margin-left: 25px;
+  margin-left: 30px;
   text-decoration: none;
+  text-transform: uppercase;
   border-bottom: 3px solid transparent;
 
   color: rgba(204, 204, 204, 1);

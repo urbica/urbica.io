@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import axios from 'axios';
 import { injectIntl } from 'react-intl';
 
@@ -53,5 +55,9 @@ class Form extends Component {
     );
   }
 }
+
+Form.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
 
 export default injectIntl(Form);

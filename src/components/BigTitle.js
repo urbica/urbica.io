@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  max-width: 50%;
+  max-width: ${props => (props.locale === 'ru' ? '55%' : '50%')};
   line-height: calc(100vw / 23);
   font-size: calc(100vw / 30);
   text-transform: uppercase;

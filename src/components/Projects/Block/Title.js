@@ -5,6 +5,7 @@ const Container = styled.div`
   position: relative;
   font-size: 30px;
   line-height: 37px;
+     
   text-transform: uppercase;
   padding-top: 25px;
   
