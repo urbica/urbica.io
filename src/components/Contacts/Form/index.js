@@ -41,13 +41,13 @@ class Form extends Component {
       <Container>
         <form onSubmit={this.handleSubmit}>
           <Input id="name" type="text" placeholder={intl.messages.form.name} />
-          <Input id="phone" type="text" placeholder="Email or phone number" />
-          <InputText id="text" placeholder="Ask us a question or tell us about your project" />
+          <Input id="phone" type="text" placeholder={intl.messages.form.email} />
+          <InputText id="text" placeholder={intl.messages.form.text} />
           {
             submitted ? (
-              <div>Your message is sucсesfully sent</div>
+              <div>{intl.messages.form.submited}</div>
             ) : (
-              <Submit type="submit" value="Submit" />
+              <Submit type="submit" value={intl.messages.form.submit} />
             )
           }
         </form>

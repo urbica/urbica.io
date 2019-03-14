@@ -1,5 +1,7 @@
 import React from 'react';
 import Media from 'react-media';
+import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
 
 import Title from '../../Title';
 import Container from './Container';
@@ -7,16 +9,16 @@ import Content from './Content';
 import Block from './Block';
 import Link from './Link';
 
-export default () => (
+const Footer = ({ intl }) => (
   <Container>
-    <Title>Drop us a line</Title>
+    <Title>{intl.messages.contacts['address.title']}</Title>
     <Content>
       <Media query={{ maxWidth: 850 }}>
         {
           matches => (
             <>
               <Block address>
-                Russia, Moscow, 3rd  Monetchikovsky lane, 11/1
+                {intl.messages.contacts.address}
               </Block>
               {matches && (
                 <Block>
@@ -73,3 +75,9 @@ export default () => (
     </Content>
   </Container>
 );
+
+Footer.propTypes = {
+  intl: PropTypes.object.isRequired,
+};
+
+export default injectIntl(Footer);

@@ -53,16 +53,20 @@ module.exports = {
     'martin.title': 'martin',
     'martin.description': 'PostGIS vector tiles server',
     'react-map-gl.title': 'react-map-gl',
-    'react-map-gl.description': 'React Component for Mapbox GL JS',
+    'react-map-gl.description': 'React Component Library for Mapbox GL JS',
   },
   contacts: {
     title: 'Let’s get in touch',
     text: 'Fill the form or contact us on',
     link: 'Work with us',
+    'address.title': 'DROP US A LINE',
+    address: 'Russia, Moscow, 3rd Monetchikovsky lane, 11/1',
   },
   form: {
     name: 'Name',
     email: 'Email or phone number',
     text: 'Ask us a question or tell us about your project',
+    submit: 'Submit',
+    submited: 'Your message is sucсesfully sent',
   },
 };
