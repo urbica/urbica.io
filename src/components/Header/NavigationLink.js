@@ -22,7 +22,6 @@ const NavigationLink = styled(Link)`
   
   @media (max-width: 850px) {
     margin-left: 0;
-    margin-right: 25px;
   }
 `;
 

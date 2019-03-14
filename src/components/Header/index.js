@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 
 import Container from './Container';
+import Row from './Row';
 import Navigation from './Navigation';
 import NavigationLink from './NavigationLink';
 import NavigationSimpleLink from './NavigationSimpleLink';
@@ -13,7 +14,15 @@ import Logo from './Logo';
 const Header = ({ intl, location }) => (
   <Container>
     <HeaderWrap>
-      <Logo />
+      <Row>
+        <Logo />
+        <Language
+          to={location.pathname.replace(`/${intl.locale}`, intl.locale === 'en' ? '/ru' : '/en')}
+          mobile
+        >
+          {intl.messages.header.language}
+        </Language>
+      </Row>
       <Navigation>
         <NavigationLink
           to="/projects"

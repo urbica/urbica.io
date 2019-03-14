@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import arrow from '../../assets/svg/Arrow_to_bottom.svg';
 
 const Language = styled(Link)`
+  display: ${({ mobile }) => (mobile ? 'none' : 'block')};
   position: relative;
   font-size: 30px;
   line-height: 71px;
@@ -44,8 +45,8 @@ const Language = styled(Link)`
   }
   
   @media (max-width: 850px) {
+    display: ${({ mobile }) => (!mobile ? 'none' : 'block')};
     margin-left: 0;
-    margin-right: 25px;
   }
 `;
 
