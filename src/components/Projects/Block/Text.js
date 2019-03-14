@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Text = styled.div`
-  font-size: 30px;
+  font-size: 28px;
   line-height: 37px;
   color: #aaaaaa;
 `;

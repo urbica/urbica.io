@@ -48,6 +48,7 @@ module.exports = {
     'velobike.description': 'A dispatching system for Moscow bikesharing',
     'walkstreets.title': 'Walkstreets',
     'walkstreets.description': 'Мost comfortable walking routes',
+    titleTech: 'OUR TECHNOLOGIES',
     'galton.title': 'galton',
     'galton.description': 'Lightweight Node.js isochrone map server',
     'martin.title': 'martin',

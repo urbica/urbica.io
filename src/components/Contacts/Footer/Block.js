@@ -4,14 +4,14 @@ export default styled.div`
   display: flex;
   flex-direction: column;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 28px;
   flex-grow: 0;
   padding-right: 20px;
 
   color: #cccccc;
   opacity: 0.8;
   
-  width: ${({ address }) => (address ? '33%' : 'auto')};
+  width: ${({ width }) => (width || 'auto')};
   
   @media (max-width: 1200px) {
     width: calc(50% - 30px);

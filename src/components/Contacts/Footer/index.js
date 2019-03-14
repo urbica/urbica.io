@@ -17,7 +17,7 @@ const Footer = ({ intl }) => (
         {
           matches => (
             <>
-              <Block address>
+              <Block width={intl.locale === 'ru' ? '36%' : '33%'}>
                 {intl.messages.contacts.address}
               </Block>
               {matches && (

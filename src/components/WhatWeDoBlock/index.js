@@ -23,6 +23,7 @@ const WhatWeDo = ({ intl }) => (
           {
             data.map(({ title, text }) => (
               <Block
+                locale={intl.locale}
                 key={title}
                 title={intl.messages.whatWeDo[title]}
                 text={intl.messages.whatWeDo[text]}

@@ -16,7 +16,7 @@ const Projects = ({ intl }) => (
       disableBorder
     />
     <Section
-      title="Our technologies"
+      title={intl.messages.projects.titleTech}
       content={technologies}
       footer
     />

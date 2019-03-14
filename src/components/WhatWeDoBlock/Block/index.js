@@ -4,12 +4,12 @@ import Container from './Container';
 import Title from './Title';
 import Text from './Text';
 
-const Block = ({ title, text }) => (
+const Block = ({ title, text, locale }) => (
   <Container>
     <Title>
       {title}
     </Title>
-    <Text>
+    <Text locale={locale}>
       {text}
     </Text>
   </Container>
@@ -18,6 +18,7 @@ const Block = ({ title, text }) => (
 Block.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  locale: PropTypes.string.isRequired,
 };
 
 export default Block;

@@ -4,12 +4,12 @@ export default [
     text: 'visualisation.description',
   },
   {
-    title: 'ui-ux.title',
-    text: 'ui-ux.description',
-  },
-  {
     title: 'map.title',
     text: 'map.description',
+  },
+  {
+    title: 'ui-ux.title',
+    text: 'ui-ux.description',
   },
   {
     title: 'research.title',

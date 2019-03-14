@@ -48,6 +48,7 @@ module.exports = {
     'velobike.description': 'Система ребалансировки городского сервиса проката велосипедов',
     'walkstreets.title': 'Walkstreets',
     'walkstreets.description': 'Комфортные городские пешие маршруты',
+    titleTech: 'Наши технологии',
     'galton.title': 'galton',
     'galton.description': 'Node.js cервис построения зон доступности',
     'martin.title': 'martin',
@@ -57,7 +58,7 @@ module.exports = {
   },
   contacts: {
     title: 'Свяжитесь с нами',
-    text: 'Заполните форму или отправте письмо',
+    text: 'Заполните форму или отправьте письмо',
     link: 'Контакты',
     'address.title': 'Контакты',
     address: 'Россия, Москва, 3-ий Монетчиковский переулок, 11/1',
