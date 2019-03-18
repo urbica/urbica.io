@@ -37,7 +37,7 @@ module.exports = {
     'gulag.title': 'Карта истории ГУЛАГа',
     'gulag.description': 'Хронология системы исправительных лагерей',
     'areal.title': 'AReal',
-    'areal.description': 'Санкт-Петербург в дополненой реальности',
+    'areal.description': 'Санкт-Петербург в дополненной реальности',
     'agglomerations.title': 'Эпоха агломераций',
     'agglomerations.description': 'Как устроены городские агломерации',
     'mapsme.title': 'MAPS.ME',
