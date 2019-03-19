@@ -27,9 +27,6 @@ class Redirect extends PureComponent {
 
       const newUrl = withPrefix(`/${detected}${pathname}`);
       window.location.replace(newUrl);
-    } else {
-      const newUrl = withPrefix(`/en${pathname}`);
-      window.location.replace(newUrl);
     }
   }
 
