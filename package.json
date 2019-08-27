@@ -10,7 +10,7 @@
     "deploy": "rm -rf public && gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.18.1",
     "babel-plugin-styled-components": "1.10.0",
     "browser-lang": "0.0.1",
     "gatsby": "2.0.91",
