@@ -14,7 +14,7 @@ export default [
   {
     title: 'areal.title',
     description: 'areal.description',
-    url: 'https://areal.urbica.co/',
+    url: 'https://apps.apple.com/ru/app/areal/id1373207530',
     img: '/images/projects/arial.jpeg',
   },
   {
