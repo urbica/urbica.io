@@ -61,11 +61,6 @@ const Footer = ({ intl }) => (
                   <div>
                     <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
                   </div>
-                  <div>
-                    <Link href="tel:+79166271646" disableArrow>
-                      +7 916 627 16 46
-                    </Link>
-                  </div>
                 </Block>
               )
             }
