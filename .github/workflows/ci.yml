@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -26,9 +26,9 @@ jobs:
 
     - uses: actions/setup-node@v4
       with:
-        cache: yarn
+        cache: npm
         node-version-file: .nvmrc
-        cache-dependency-path: yarn.lock
+        cache-dependency-path: package-lock.json
 
     - name: Setup Pages
       id: pages
@@ -37,12 +37,12 @@ jobs:
         static_site_generator: gatsby
 
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: npm ci
 
     - name: Build site
       env:
         PREFIX_PATHS: 'true'
-      run: yarn build
+      run: npm run build
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
