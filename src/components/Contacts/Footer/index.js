@@ -28,7 +28,7 @@ const Footer = ({ intl }) => (
                     </Link>
                   </div>
                   <div>
-                    <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
+                    <Link href="mailto:hello@urbica.io">hello@urbica.io</Link>
                   </div>
                 </Block>
               )}
@@ -59,7 +59,7 @@ const Footer = ({ intl }) => (
               matches && (
                 <Block>
                   <div>
-                    <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
+                    <Link href="mailto:hello@urbica.io">hello@urbica.io</Link>
                   </div>
                 </Block>
               )

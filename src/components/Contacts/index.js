@@ -21,7 +21,7 @@ const Contacts = ({ intl }) => (
         <Text>
           {intl.messages.contacts.text}
         </Text>
-        <Link href="mailto:hello@urbica.co">hello@urbica.co</Link>
+        <Link href="mailto:hello@urbica.io">hello@urbica.io</Link>
       </Content>
       <Form />
     </Main>

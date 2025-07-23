@@ -8,7 +8,7 @@ export default [
   {
     title: 'gulag.title',
     description: 'gulag.description',
-    url: 'https://v3.urbica.co/gulag',
+    // url: 'https://v3.urbica.co/gulag',
     img: '/images/projects/gulag.jpg',
   },
   {
@@ -20,31 +20,31 @@ export default [
   {
     title: 'agglomerations.title',
     description: 'agglomerations.description',
-    url: 'https://v3.urbica.co/agglomerations',
+    // url: 'https://v3.urbica.co/agglomerations',
     img: '/images/projects/agglom.jpg',
   },
   {
     title: 'mapsme.title',
     description: 'mapsme.description',
-    url: 'https://v3.urbica.co/maps_me',
+    // url: 'https://v3.urbica.co/maps_me',
     img: '/images/projects/mapsme.jpg',
   },
   {
     title: 'magistral.title',
     description: 'magistral.description',
-    url: 'https://v3.urbica.co/magistral',
+    // url: 'https://v3.urbica.co/magistral',
     img: '/images/projects/magistral.jpg',
   },
   {
     title: 'velobike.title',
     description: 'velobike.description',
-    url: 'https://v3.urbica.co/velobike',
+    // url: 'https://v3.urbica.co/velobike',
     img: '/images/projects/velobike.jpg',
   },
   {
     title: 'walkstreets.title',
     description: 'walkstreets.description',
-    url: 'https://v3.urbica.co/walkstreets',
+    // url: 'https://v3.urbica.co/walkstreets',
     img: '/images/projects/ws.jpg',
   },
   null,

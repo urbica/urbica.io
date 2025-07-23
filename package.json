@@ -1,10 +1,10 @@
 {
-  "name": "urbica.co",
-  "description": "Urbica",
+  "name": "urbica.io",
+  "description": "Urbica's website",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "rm -rf public && gatsby build --prefix-paths && gh-pages -d public"

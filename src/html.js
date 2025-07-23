@@ -13,10 +13,10 @@ export default class HTML extends React.Component {
           name="viewport"
           content="width=device-width, initial-scale=0.7, shrink-to-fit=no"
         />
-        <meta property="og:url" content="http://urbica.co"/>
+        <meta property="og:url" content="http://urbica.io"/>
         <meta property="og:title" content="Urbica"/>
         <meta property="og:description" content="We design data tools for getting is insights and making decisions"/>
-        <meta property="og:image" content="https://urbica.co/fb.jpg"/>
+        <meta property="og:image" content="https://urbica.io/fb.jpg"/>
 
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png"/>

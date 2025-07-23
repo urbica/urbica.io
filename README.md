@@ -1,10 +1,10 @@
-# urbica.co
+# urbica.io
 
 ## Development
 
 ```shell
-git clone https://github.com/urbica/urbica.co.git
-cd urbica.co
+git clone https://github.com/urbica/urbica.io.git
+cd urbica.io
 yarn
 yarn start
 ```
