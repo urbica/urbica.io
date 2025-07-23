@@ -1,17 +1,14 @@
 # urbica.io
 
+## Requirements
+
+- Node.js 22 (see `.nvmrc`)
+
 ## Development
 
 ```shell
 git clone https://github.com/urbica/urbica.io.git
 cd urbica.io
-yarn
-yarn start
-```
-
-## Deployment
-
-```shell
-export AIR_TABLE_KEY='you key'
-yarn deploy
+npm ci
+npm start
 ```

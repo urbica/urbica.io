@@ -8,7 +8,7 @@ export default [
   {
     title: 'martin.title',
     description: 'martin.description',
-    url: 'https://martin.urbica.co/',
+    // url: 'https://martin.urbica.co/',
     img: '/images/technologies/martin.jpg',
   },
   {
